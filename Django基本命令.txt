@@ -1,0 +1,8 @@
+启动开发网站
+python manage.py runserver 
+数据迁移操作
+python manage.py makemigration
+数据迁移操作
+python manage.py migrate
+创建超级管理员
+python manage.py createsuperuser
