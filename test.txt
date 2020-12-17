@@ -4,3 +4,5 @@ Django学习案例
     修改分支名main为master
 2.2020-12-05
 	test in company
+3.2020-12-17
+    Django2.0教程：Django基本应用结构
