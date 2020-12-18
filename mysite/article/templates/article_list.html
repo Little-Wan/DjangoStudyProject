@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article_list</title>
+</head>
+<body>
+    {# 魔法标签 #}
+    {% for article in articles %}
+{#        <a href="/article/{{ article.pk }}">{{ article.title }}</a>#}
+{#        别名#}
+        <a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a>
+    {% endfor %}
+
+</body>
+</html>

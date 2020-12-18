@@ -54,9 +54,9 @@ ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',#模板文件的样式，有多种，待了解。
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True,#app中的模板文件为有效，可被app读取
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
