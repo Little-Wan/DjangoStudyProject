@@ -24,7 +24,8 @@ def article_detail(request,article_id):
     return render_to_response("article_detail.html", context)
 
 def article_list(request):
-    articles = Article.objects.all()
+    # 筛选固定字段显示
+    articles = Article.objects.filter(is_deleted=False)
     context = {}
     context["articles"] = articles
     return render_to_response("article_list.html",context)

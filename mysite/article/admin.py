@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import Article
+from article.models import Article
 
 # Register your models here.
-admin.site.register(Article)
+# 装饰器方法注册，推荐
+@admin.register(Article)
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('pk','title','content','is_deleted','readNum','author','creatTime','lastUpdateTime')
+    ordering = ("pk",)
+
